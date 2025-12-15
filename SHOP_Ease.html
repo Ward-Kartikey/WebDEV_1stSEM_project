@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopEase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+    }
+
+    /* Header */
+    header {
+      background-color: #1f2a38;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f0c14b;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 30px;
+      display: flex;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-bar button {
+      padding: 10px 16px;
+      border: none;
+      background-color: #f0c14b;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      padding: 40px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .price {
+      color: #2a7f62;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-card button {
+      background-color: #1f2a38;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: #16202b;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1f2a38;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ShopEase</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Account</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    Smart Deals for Everyday Needs
+  </div>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/R.74379ebc69f670571055fea9e6233123?rik=WdYAIlWqy7nuwQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2fheadphones%2fheadphones_PNG7638.png&ehk=PiuosP72OiRGaettuIxzhQKpVMXIXYMc7wnQPx84DvY%3d&risl=&pid=ImgRaw&r=0" alt="Product">
+      <h3>Wireless Headphones</h3>
+      <div class="price">Rs. 5989</div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.iA691_dV8-V1XAzRzg3mjQHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product">
+      <h3>Smart Watch</h3>
+      <div class="price">Rs. 3599</div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/R.16fcf98a6de562d181ac3ffd0ab3e7bc?rik=zq9IGX3O6YhwJw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fspeaker-hd-png-p4wfront-2614.jpg&ehk=r2iXrJq1VhITlqbQWM6AlnObynnvCq1FERS3LJKrkLw%3d&risl=&pid=ImgRaw&r=0" alt="Product">
+      <h3>Portable Speaker</h3>
+      <div class="price">Rs. 49999</div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6548/6548181ld.jpg" alt="Product">
+      <h3>Gaming Mouse</h3>
+      <div class="price">Rs. 9999</div>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ShopEase • Simple E-Commerce UI
+  </footer>
+
+</body>
+</html>
